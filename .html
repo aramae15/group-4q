@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Issues</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background:   #ffffff;
+      color: #000000;
+    }
+    .container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 2rem;
+      box-shadow: 0 10px 15px rgba(255, 255, 255, 0.3);
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      border: 1px solid #4b5563;
+      background-image: url("bck.png"); /* world map */
+      background-size: cover;
+      background-position: center;
+    }   
+    .section-box {
+      background-color: rgba(250, 250, 250, 0.9);
+      border-radius: 0.75rem;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+      color: #e5e7eb;
+      text-align: center;
+    }
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+      position: relative;
+    }
+    .icon-box {
+      background-color: #4b5563;
+      border-radius: 0.75rem;
+      padding: 0.5rem;
+      overflow: hidden;
+    }
+    .icon-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .horiz-line {
+      position: absolute;
+      height: 2px;
+      background: #9ca3af;
+    }
+    .dot-container {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .dot-main {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: #1f2937;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+      color: #000000 !important;
+    }
+    
+  </style>
+</head>
+<body class="bg-white text-gray-300">
+  <div class="relative min-h-screen flex items-center justify-center">
+    <div class="container relative grid md:grid-cols-2 gap-8">
+      
+      <!-- Left Panel -->
+      <div class="flex flex-col items-center justify-center relative p-8 md:p-12 md:mr-24">
+        <div class="section-box w-full max-w-xs h-64 p-4 flex items-center justify-center">
+          <div class="text-center">
+            <h2 class="text-xl md:text-2xl font-bold">Accessibility Issues</h2>
+            <h3 class="text-lg md:text-xl mt-1">PWD'S</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="flex flex-col gap-8 md:ml-24">
+        <!-- Physical -->
+        <div class="relative flex items-center gap-4">
+          <div class="horiz-line w-12 top-1/2 -left-12 transform -translate-y-1/2"></div>
+          <div class="dot-container bg-[#8fe18b] -left-16 top-1/2 transform -translate-y-1/2">
+            <div class="dot-main"></div>
+          </div>
+          <div class="flex-shrink-0 w-20 h-20 icon-box border-2 border-[#8fe18b] flex items-center justify-center rounded-2xl">
+            <img src="physical.png" alt="Physical Icon"> <!-- replace image -->
+          </div>
+          <div class="flex-grow info-box border-2 border-[#8fe18b]">
+            <h4 class="font-bold text-[#8fe18b]">PHYSICAL</h4>
+            <p class="text-sm mt-1">A health problem related to the body encompassing diseases, injuries, impairments, and chronic pain, often influenced by physical inactivity, poor nutrition, and stress.</p>
+          </div>
+        </div>
+
+        <!-- Communication -->
+        <div class="relative flex items-center gap-4">
+          <div class="horiz-line w-12 top-1/2 -left-12 transform -translate-y-1/2"></div>
+          <div class="dot-container bg-[#ef5d52] -left-16 top-1/2 transform -translate-y-1/2">
+            <div class="dot-main"></div>
+          </div>
+          <div class="flex-shrink-0 w-20 h-20 icon-box border-2 border-[#ef5d52] flex items-center justify-center rounded-2xl">
+            <img src="communication.png" alt="Communication Icon"> <!-- replace image -->
+          </div>
+          <div class="flex-grow info-box border-2 border-[#ef5d52]">
+            <h4 class="font-bold text-[#ef5d52]">COMMUNICATION</h4>
+            <p class="text-sm mt-1">PWDs face communication issues like no captions for the deaf, no alt text for the blind, lack of text options for speech-impaired, and complex language for cognitive disabilities.</p>
+          </div>
+        </div>
+
+        <!-- Digital -->
+        <div class="relative flex items-center gap-4">
+          <div class="horiz-line w-12 top-1/2 -left-12 transform -translate-y-1/2"></div>
+          <div class="dot-container bg-[#89a8dc] -left-16 top-1/2 transform -translate-y-1/2">
+            <div class="dot-main"></div>
+          </div>
+          <div class="flex-shrink-0 w-20 h-20 icon-box border-2 border-[#89a8dc] flex items-center justify-center rounded-2xl">
+            <img src="digital.png" alt="Digital Icon"> <!-- replace image -->
+          </div>
+          <div class="flex-grow info-box border-2 border-[#89a8dc]">
+            <h4 class="font-bold text-[#89a8dc]">DIGITAL</h4>
+            <p class="text-sm mt-1">The digital divide, which is the unequal access to and use of technology, and a lack of digital accessibility in websites and services designed without PWD needs in mind.</p>
+          </div>
+        </div>
+
+        <!-- Economic -->
+        <div class="relative flex items-center gap-4">
+          <div class="horiz-line w-12 top-1/2 -left-12 transform -translate-y-1/2"></div>
+          <div class="dot-container bg-[#916bce] -left-16 top-1/2 transform -translate-y-1/2">
+            <div class="dot-main"></div>
+          </div>
+          <div class="flex-shrink-0 w-20 h-20 icon-box border-2 border-[#916bce] flex items-center justify-center rounded-2xl">
+            <img src="economic.png" alt="Economic Icon"> <!-- replace image -->
+          </div>
+          <div class="flex-grow info-box border-2 border-[#916bce]">
+            <h4 class="font-bold text-[#916bce]">ECONOMIC</h4>
+            <p class="text-sm mt-1">Higher poverty rates, lack of access to stable employment, prevalence of informal jobs and underemployment, leading to a cycle of poverty.</p>
+          </div>
+        </div>
+
+        <!-- Attitudinal -->
+        <div class="relative flex items-center gap-4">
+          <div class="horiz-line w-12 top-1/2 -left-12 transform -translate-y-1/2"></div>
+          <div class="dot-container bg-[#98c253] -left-16 top-1/2 transform -translate-y-1/2">
+            <div class="dot-main"></div>
+          </div>
+          <div class="flex-shrink-0 w-20 h-20 icon-box border-2 border-[#98c253] flex items-center justify-center rounded-2xl">
+            <img src="attitudinal.png" alt="Attitudinal Icon"> <!-- replace image -->
+          </div>
+          <div class="flex-grow info-box border-2 border-[#98c253]">
+            <h4 class="font-bold text-[#98c253]">ATTITUDINAL</h4>
+            <p class="text-sm mt-1">Negative perceptions, stereotypes, stigma, prejudice, and discrimination from others that hinder their social integration and well-being.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
